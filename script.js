@@ -1,18 +1,15 @@
 const hamburgerMenu = document.querySelector('#checkbox2');
 const menu = document.querySelector('.menu');
 
-hamburgerMenu.addEventListener('click', () => {
+function toggleMenu() {
     if (menu.classList.contains('show')) {
         menu.classList.remove('show');
-        menu.classList.add('hide');
-    } else if (menu.classList.contains('hide')) {
-        menu.classList.remove('hide');
-        menu.classList.add('show');
     } else {
         menu.classList.add('show');
     }
-});
+}
 
+hamburgerMenu.addEventListener('click', toggleMenu);
 
 var app = document.getElementById('typing');
 
@@ -33,3 +30,5 @@ typewriter.typeString('Hello World!')
     .pauseFor(2500)
     .deleteAll()
     .start();
+
+    
