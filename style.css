@@ -160,6 +160,21 @@ body{
     transform: rotate(180deg);
 }
 
+.flag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag img{
+    padding: 15px;
+    height: 40px;
+}
+
+.flag a{
+	cursor: pointer;
+}
+
   /**/
 
 

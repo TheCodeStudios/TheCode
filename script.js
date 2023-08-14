@@ -30,5 +30,3 @@ typewriter.typeString('Hello World!')
     .pauseFor(2500)
     .deleteAll()
     .start();
-
-    
